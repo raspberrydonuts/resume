@@ -1,0 +1,171 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Jared} \headerlastnamestyle{Lim} \\
+	\vspace{2mm}
+	{\faEnvelope\ limxx564@umn.edu} | {\faMobile\ 507-779-5154} | {\faMapMarker\ 2600 University Ave SE, Apt 318, Minneapolis MN, 55414}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{Bachelor of Science in Computer Science, Minor in Management}
+	{University of Minnesota - Twin Cities}
+	{Minneapolis, MN}
+	{Sep 2017 – May 2021}
+	{GPA: 3.63}
+\end{cventries}
+
+\vspace{-2mm}
+\cvsection{Technical Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.30}{\begin{tabular}{ l l }
+		Languages:  & {\skill{ Python, Java, C++, C\#, OCaml, JavaScript, HTML/CSS, SQL (through frameworks)}} \\
+		Frameworks:  & {\skill{ .NET Core, Vue.js, Quasar, Django, Google Tests, Click, MinGFX}} \\
+		Experience with:  & {\skill{ Azure DevOps, Gitlab, AWS, Axios, OpenAPI, Processing, Ansible, Doxygen, LaTeX}}\\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Work Experience}
+\begin{cventries}
+	\cventry
+	{Technology Consultant / Application Development Intern}
+	{RSM US LLP}
+	{Minneapolis, MN}
+	{June 2019 – August 2019}
+	{\begin{cvitems}
+		\item {Consulted with clients on the design and optimization of controls, solutions, and products utilizing extensive knowledge of information systems}
+		\item {Developed a ticket management system using ASP.NET Core full-stack web application framework}
+		\item {Implemented visual elements and user interface for an enterprise resource planning (ERP)-based Blockchain traceability solution}
+		\end{cvitems}}
+	\cventry
+	{Software Developer Intern}
+	{COUNTRY Financial}
+	{Minneapolis, MN}
+	{May 2018 – May 2019}
+	{\begin{cvitems}
+		\item {Integrated the functionalities of GitLab to automate and deploy software using CI/CD pipelines while maintaining DevOps philosophy to deliver applications and services at high velocity}
+		\item {Engineered a web app that receives traffic from GitLab CI Jobs and performs actions on their behalf using locked-down, elevated permissions}
+		\item {Programmed Click command-line interfaces for automation tools using GitLab’s REST API}
+		\end{cvitems}}
+	\cventry
+	{Technology Help Specialist -> Desktop Support Specialist}
+	{University of Minnesota, Office of Information Technology}
+	{Minneapolis, MN}
+	{July 2017 – Present}
+	{\begin{cvitems}
+		\item {Provided technical support for the entire University Community via phone, chat, SMS, email, face-to-­face, and using remote tools}
+		\item {Oversaw local and remote computer lab facilities including customer support, security, and hardware/software troubleshooting}
+		\item {Promoted in 2019 to facilitate specialized computer and device support in tech support zones}
+		\item {Facilitated the transition for the entire University staff and faculty to work remotely during the 2020 COVID-19 pandemic}
+		\end{cvitems}}
+\end{cventries}
+\cvsection{Projects}
+\begin{cventries}
+	\cventry
+	{}
+	{SN-GC-Integration}
+	{}
+	{}
+	{\begin{cvitems}
+	\vspace{-4mm}
+		\item {A Google Chrome extension that reads scheduled work tasks from ServiceNow, an IT service mangement system used at the University of Minnesota's Office of Information Technology, and automatically creates Google Calendar events}
+		\item {Uses Google's OAuth2 to authenticate the user and Google Calendar API to send requests that create calendar events}
+		\item {Designed with Google Chrome's Extension framework with Javascript along with JQuery libraries}
+		\end{cvitems}}
+\end{cventries}
+
+\iffalse
+\cvsection{Activities}
+\begin{cventries}
+	\cventry
+	{A free, volunteer-led, community-based programming club where I help teach youth between ages seven and seventeen to code, build a website, create an app or game, and explore technology in an informal, creative, and social environment.}
+	{Mentor at CoderDojo}
+	{October 2017 - Present}
+	{}
+	{}
+	\vspace{-5mm}
+\end{cventries}
+\cvsection{Awards and Accomplishments}
+\begin{cvhonors}
+	\cvhonor
+	{Dean\textquotesingle{}s List}
+	{}
+	{University of MN}
+	{2018-2019}
+	\cvhonor
+	{Presidential Scholarship}
+	{}
+	{University of MN}
+	{2017}
+	\cvhonor
+	{Best of the Class Award}
+	{}
+	{KEYC TV Network}
+	{2017}
+	\cvhonor
+	{All City Soccer Team}
+	{}
+	{MNYSA}
+	{2017}
+\end{cvhonors}
+\fi
+
+\end{document}

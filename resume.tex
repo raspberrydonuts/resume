@@ -1,0 +1,155 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Jared} \headerlastnamestyle{Lim} \\
+	\vspace{2mm}
+	{\faEnvelope\ jarpatlim@gmail.com} | {\faMobile\ 507-779-5154} | {\faMapMarker\ 2600 University Ave SE, Apt 318, Minneapolis MN, 55414}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{B.S. and M.S. in Computer Science. Minor in Management}
+	{University of Minnesota - Twin Cities}
+	{Minneapolis, MN}
+	{Sep 2017 – May 2022}
+	{GPA: 3.68}
+\end{cventries}
+
+\vspace{-2mm}
+\cvsection{Technical Skills}
+\begin{cventries}
+	\vspace{-3mm}
+	\cventry
+	{}
+	{\def\arraystretch{1.50}{\begin{tabular}{ l l }
+	    Proficient in: \  & {\skill{Python, Java, C++, C, Git}} \\
+		Exposure to:  & {\skill{Django, Spring Boot, AWS, Kubernetes, Docker, Drone, Gitlab, Jira, Azure DevOps, Oracle, Ansible, }} \\
+		& {\skill{Vue.js, ReactJS, Node.js, .NET Core, Groovy, Kotlin, Spock, Flask, Click, OCaml, Unix Programming,}}\\
+		& {\skill{SQL, TypeScript/JavaScript, HTML/CSS}}\\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-9mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Work Experience}
+\begin{cventries}
+	\cventry
+	{Software Engineer Intern}
+	{Target Corporation}
+	{Minneapolis, MN}
+	{May 2020 – December 2020}
+	{\begin{cvitems}
+		\item {Modernized legacy supply chain \textbf{SQL} store procedures to \textbf{Java Spring Boot} services}
+		\item {Built, deployed, and maintained a centralized search interface with \textbf{ReactJS} that allowed teams to more efficiently track the movement of products in distribution centers}
+		\item {Resolved external data access issues by engineering \textbf{Kotlin} Spring Boot microservices for other teams to access supply chain \textbf{Oracle} databases}
+		\end{cvitems}}
+	\cventry
+	{Undergraduate Teaching Assistant}
+	{University of Minnesota Department of Computer Science}
+	{Minneapolis, MN}
+	{August 2020 – December 2020}
+	{\begin{cvitems}
+    	\item {CSCI3081W - Program Design and Development under Dr. Mattia Fazzini}
+		\item {Collaborated with staff to administer coursework, evaluate submissions, and analyze class performance}
+		\end{cvitems}}
+	\cventry
+	{Technology Consultant / Application Development Intern}
+	{RSM US LLP}
+	{Minneapolis, MN}
+	{June 2019 – August 2019}
+	{\begin{cvitems}
+		\item {Developed a ticketing management system using  \textbf{.NET Core} full-stack web application framework}
+		\item {Implemented a user interface using \textbf{Vue.js (Quasar)} for an ERP-based \textbf{Blockchain} traceability solution}
+		\end{cvitems}}
+	\cventry
+	{Software Developer Intern}
+	{COUNTRY Financial}
+	{Minneapolis, MN}
+	{May 2018 – May 2019}
+	{\begin{cvitems}
+		\item {Automated and deployed software using \textbf{Gitlab} pipelines to deliver applications and services at high velocity}
+		\item {Engineered a \textbf{Django} web app that receives traffic from Gitlab CI Jobs and performs actions on their behalf}
+		\item{Programmed \textbf{Click} command-line interfaces for automation tools using Gitab’s API}
+		\end{cvitems}}
+\end{cventries}
+
+\cvsection{Projects}
+\begin{cventries}
+	\cventry
+	{}
+	{SN-GC-Integration}
+	{}
+	{}
+	{\begin{cvitems}
+		\vspace{-4mm}
+		\item {A Google Chrome extension written in JavaScript that reads scheduled work tasks from ServiceNow and automatically creates Google Calendar events}
+		\end{cvitems}}
+\end{cventries}
+
+% \vspace{-2mm}
+% \cvsection{Activities}
+% \begin{cventries}
+% 	\cventry
+% 	{Mentor}
+% 	{CoderDojo}
+% 	{}
+% 	{October 2017 - Present}
+% 	{\begin{cvitems}
+% 		\item {Mentoring youth to code, build a website, create an app or game, and explore technology in an informal, creative, and social environment in a free, volunteer-led, community-based programming club}
+% 		\end{cvitems}}
+% \end{cventries}
+\end{document}
